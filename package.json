@@ -1,0 +1,15 @@
+{
+  "name": "@my-nuxt/features-layer",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.18.1",
+  "peerDependencies": {
+    "@nuxtjs/i18n": "^10.1.0",
+    "nuxt": "^4.1.3"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:current",
+    "nuxt": "catalog:current",
+    "typescript": "catalog:current"
+  }
+}
