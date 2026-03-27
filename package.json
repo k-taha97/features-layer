@@ -1,5 +1,6 @@
 {
   "name": "@my-nuxt/features-layer",
+  "type": "module",
   "version": "1.0.0",
   "private": true,
   "packageManager": "pnpm@10.18.1",

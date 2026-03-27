@@ -1,4 +1,9 @@
+import { dirname, join } from 'node:path'
+import { fileURLToPath } from 'node:url'
+
 import { defineNuxtConfig } from 'nuxt/config'
+
+const currentDir = dirname(fileURLToPath(import.meta.url))
 
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
@@ -10,9 +15,22 @@ export default defineNuxtConfig({
   ],
 
   modules: [
-    '@nuxtjs/tailwindcss',
+    '@nuxtjs/color-mode',
     '@nuxtjs/i18n',
+    '@nuxtjs/tailwindcss',
+    '@primevue/nuxt-module',
+    'nuxt-viewport',
   ],
+
+  alias: {
+    '@features': join(currentDir, './'),
+  },
+
+  postcss: {
+    plugins: {
+      autoprefixer: {},
+    },
+  },
 
   components: [
     { path: './components', global: true },
