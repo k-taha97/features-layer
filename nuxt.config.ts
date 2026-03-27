@@ -15,7 +15,6 @@ export default defineNuxtConfig({
   ],
 
   modules: [
-    '@nuxtjs/color-mode',
     '@nuxtjs/i18n',
     '@nuxtjs/tailwindcss',
     '@primevue/nuxt-module',
