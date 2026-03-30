@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { ListDataProps } from '#imports'
-import { Paragraph, PrimeImage } from '#components'
 
 import noData from '~/assets/images/no-data.png'
 
