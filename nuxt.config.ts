@@ -31,7 +31,7 @@ export default defineNuxtConfig({
   },
 
   components: [
-    { path: './components', global: true },
+    { path: './components', global: true, pathPrefix: false },
   ],
 
   experimental: {
