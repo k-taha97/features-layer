@@ -1,7 +1,14 @@
 <script setup lang="ts">
-import type { ListDataProps } from '#imports'
-
 import noData from '/images/no-data.png'
+
+interface ListDataProps {
+  endpoint: string
+  pagination: PaginationType
+  dataParamName?: string
+  disabled?: boolean
+  ignoredParams?: string[]
+  config?: any
+}
 
 const props = defineProps<ListDataProps>()
 
