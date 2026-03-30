@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import type { ListDataProps } from '#imports'
 
 import noData from '/images/no-data.png'
 

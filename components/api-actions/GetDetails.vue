@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { GetDetailsProps } from '#imports'
+
 const props = defineProps<GetDetailsProps>()
 
 const {
