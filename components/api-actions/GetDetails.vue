@@ -1,11 +1,5 @@
 <script setup lang="ts">
-export interface GetDetailsProps {
-  endpoint: string
-  idLabel?: string
-  customId?: string | null
-  hideLoading?: boolean
-  enabled?: boolean
-}
+import type { GetDetailsProps } from '#imports'
 
 const props = defineProps<GetDetailsProps>()
 
