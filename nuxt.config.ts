@@ -38,6 +38,4 @@ export default defineNuxtConfig({
     appManifest: false,
     payloadExtraction: false,
   },
-
-  ssr: false,
 })
