@@ -1,9 +1,4 @@
 <script setup lang="ts">
-import type { ListDataProps } from '@layers/api/composables'
-import { useListDataQuery } from '@layers/api/composables'
-
-import { PrimeImage } from '@layers/primevue/components/image'
-import { Paragraph } from '@layers/primevue/components/paragraph'
 
 import noData from '/images/no-data.png'
 

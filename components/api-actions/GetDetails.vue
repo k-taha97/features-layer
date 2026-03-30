@@ -1,10 +1,4 @@
 <script setup lang="ts">
-import type { GetDetailsProps } from '@layers/api/composables'
-import { useGetDetailsQuery } from '@layers/api/composables'
-import { PrimeButton } from '@layers/primevue/components/buttons'
-import { Loader, PrimeIcon } from '@layers/primevue/components/icons'
-import { Paragraph } from '@layers/primevue/components/paragraph'
-
 const props = defineProps<GetDetailsProps>()
 
 const {
@@ -33,7 +27,7 @@ provide('refetchApiData', refetch)
       We encountered an error while loading the data. Please try again or go back.
     </Paragraph>
     <div class="flex gap-4 justify-center">
-      <PrimeButton class="base-btn" @click="refetch">
+      <PrimeButton class="base-btn" @click="() => refetch()">
         Try Again
       </PrimeButton>
       <PrimeButton class="outline-btn" @click="goBack">
