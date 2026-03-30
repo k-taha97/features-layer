@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import type { ListDataProps } from '#imports'
-
 import noData from '~/assets/images/no-data.png'
 
 const props = defineProps<ListDataProps>()
