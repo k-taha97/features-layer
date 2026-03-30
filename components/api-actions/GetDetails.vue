@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { GetDetailsProps } from '#imports'
-import { Paragraph, PrimeButton, PrimeIcon } from '#components'
+import { PrimeParagraph as Paragraph, PrimeButton, PrimeIcon } from '#components'
 
 const props = defineProps<GetDetailsProps>()
 
